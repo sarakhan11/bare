@@ -1,4 +1,3 @@
-import PageTwo from "../components/addtocart/index";
 import React, { useState } from "react";
 import Image from "next/image";
 
@@ -24,13 +23,14 @@ const Index = () => {
   return (
     <>
       <div className="justify-center  mx-auto">
-        <div className="  relative">
+        <nav className="  relative">
           <div className="flex flex-wrap justify-between items-center sm:px-20 space-x-74 px-4 py-4 ">
             <Image
               src="/Group.png"
               width={56}
               height={72}
               className="my-auto cursor-pointer"
+              alt=""
             />
             <button
               className="ml-auto block xl:hidden"
@@ -61,6 +61,7 @@ const Index = () => {
                       width={8}
                       height={4}
                       className="my-auto"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -111,6 +112,7 @@ const Index = () => {
                       width={8}
                       height={4}
                       className="my-auto"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -161,6 +163,7 @@ const Index = () => {
                       width={8}
                       height={4}
                       className="my-auto"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -212,6 +215,7 @@ const Index = () => {
                       width={8}
                       height={4}
                       className="my-auto"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -268,6 +272,7 @@ const Index = () => {
                       width={8}
                       height={4}
                       className="my-auto"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -316,6 +321,7 @@ const Index = () => {
                       width={8}
                       height={4}
                       className="my-auto"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -364,6 +370,7 @@ const Index = () => {
                       width={8}
                       height={4}
                       className="my-auto"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -413,6 +420,7 @@ const Index = () => {
                       width={8}
                       height={4}
                       className="my-auto"
+                      alt=""
                     />
                   </div>
                 </div>
@@ -459,7 +467,7 @@ const Index = () => {
                   required
                 />
                 <div>
-                  <Image src="/Group 6.png" width={20} height={20} />
+                  <Image src="/Group 6.png" width={20} height={20} alt="" />
                 </div>
               </div>
               <div className="flex pl-8">
@@ -497,6 +505,7 @@ const Index = () => {
                               src="/Vectorstar.png"
                               width={22}
                               height={21}
+                              alt=""
                             />
                           </div>
                           <div className="mt-2 cursor-pointer">
@@ -504,6 +513,7 @@ const Index = () => {
                               src="/Vectorstar.png"
                               width={22}
                               height={21}
+                              alt=""
                             />
                           </div>
                           <div className="mt-2 cursor-pointer">
@@ -511,6 +521,7 @@ const Index = () => {
                               src="/Vectorstar.png"
                               width={22}
                               height={21}
+                              alt=""
                             />
                           </div>
                           <div className="mt-2 cursor-pointer">
@@ -518,6 +529,7 @@ const Index = () => {
                               src="/Vectorstar.png"
                               width={22}
                               height={21}
+                              alt=""
                             />
                           </div>
                           <div className="mt-2 cursor-pointer">
@@ -525,6 +537,7 @@ const Index = () => {
                               src="/Vectorstar.png"
                               width={22}
                               height={21}
+                              alt=""
                             />
                           </div>
                         </div>
@@ -593,6 +606,7 @@ const Index = () => {
                             height={7}
                             className="rounded-xl"
                             onClick={() => setCount1(count1 + 1)}
+                            alt=""
                           />
                           <Image
                             src="/Vectordown.png"
@@ -602,9 +616,10 @@ const Index = () => {
                             onClick={() =>
                               setCount1(count1 - 1 < 0 ? 0 : count1 - 1)
                             }
+                            alt=""
                           />
                         </div>
-                      </div>
+                      </nav>
                       <button className=" py-5 px-6 text-white bg-gray-800 rounded-xl hover:bg-gray-600 text-2xl font-medium">
                         Add to Cart
                       </button>
@@ -616,6 +631,7 @@ const Index = () => {
                       width={548}
                       height={546}
                       className="rounded-xl mx-auto sm:mt-0 "
+                      alt=""
                     />
                   </div>
                 </div>
@@ -629,12 +645,13 @@ const Index = () => {
                     width={24}
                     height={24}
                     className="rounded-xl group-hover:opacity-40 mx-auto"
+                    alt=""
                   />
                 </button>
               </div>
             )}
           </div>
-        </div>
+        </nav>
 
         <div className="pt-20 bg-rose-50 sm:px-20 px-5 sm:py-20 py-2  justify-center">
           <div className="container lg:flex justify-between mx-auto">
@@ -659,6 +676,7 @@ const Index = () => {
                 width={549}
                 height={491}
                 className="pb-20   mx-auto"
+                alt=""
               />
             </div>
           </div>
@@ -669,7 +687,7 @@ const Index = () => {
           </h2>
           <div className="justify-center flex flex-col items-center lg:w-6/12 2xl:w-full">
             <div className="bg-teal-100  justify-center text-center w-52 h-52 items-center my-auto  mb-4 py-14 px-8  rounded-full outline-offset-4 outline-2 outline-dashed outline-teal-200">
-              <Image src="/Group 297.png" width={22} height={18} />
+              <Image src="/Group 297.png" width={22} height={18} alt="" />
               <p className="font-medium "> SAFE SHIPPING</p>
               <p className="text-gray-600 ">
                 In all major cities across the country
@@ -677,14 +695,14 @@ const Index = () => {
             </div>
             <div className="sm:flex gap-x-24 justify-center">
               <div className=" sm:mb-0 mb-4 mr-0 bg-rose-50 justify-center text-center  py-14 px-18 h-52 w-52 rounded-full outline-offset-4 outline-2 outline-dashed outline-rose-400">
-                <Image src="/Group dollar.png" width={10} height={18} />
+                <Image src="/Group dollar.png" width={10} height={18} alt="" />
                 <p className="font-medium "> COMPETITIVE PRICES</p>
                 <p className="text-gray-600 px-6">
                   Quality with affordability ensured
                 </p>
               </div>
               <div className="bg-rose-50 justify-center text-center  py-14 px-18 h-52 w-52   rounded-full outline-offset-4 outline-2 outline-dashed outline-rose-400">
-                <Image src="/Group clock.png" width={18} height={18} />
+                <Image src="/Group clock.png" width={18} height={18} alt="" />
                 <p className="font-medium "> CUSTOMER SUPPORT</p>
                 <p className="text-gray-600 px-8">
                   Call us anytime: 111-111-1111
@@ -705,6 +723,7 @@ const Index = () => {
                   width={296}
                   height={346}
                   className="rounded-xl"
+                  alt=""
                 />
                 <div className="flex ">
                   <p className="font-medium text-gray-600">Sofa</p>
@@ -719,6 +738,7 @@ const Index = () => {
                   width={296}
                   height={346}
                   className="rounded-xl"
+                  alt=""
                 />
 
                 <div className="flex justify-between">
@@ -735,6 +755,7 @@ const Index = () => {
                   width={296}
                   height={346}
                   className="rounded-xl"
+                  alt=""
                 />
                 <div className="flex ">
                   <p className="font-medium text-gray-600">Dining Table</p>
@@ -749,6 +770,7 @@ const Index = () => {
                   width={296}
                   height={346}
                   className="rounded-xl"
+                  alt=""
                 />
                 <div className="flex justify-between">
                   <p className="font-medium text-gray-600">Office Chair</p>
@@ -776,6 +798,7 @@ const Index = () => {
                 width={448}
                 height={446}
                 className="rounded-xl"
+                alt=""
               />
             </div>
           </div>
@@ -795,6 +818,7 @@ const Index = () => {
                   width={1000}
                   height={1000}
                   className="rounded-xl group-hover:opacity-40 mx-auto"
+                  alt=""
                 />
                 <button
                   className="text-gray-800 absolute right-5 top-5"
@@ -805,6 +829,7 @@ const Index = () => {
                     width={24}
                     height={24}
                     className="rounded-xl group-hover:opacity-40 mx-auto"
+                    alt=""
                   />
                 </button>
               </div>
@@ -831,6 +856,7 @@ const Index = () => {
                     width={24}
                     height={24}
                     className="rounded-xl group-hover:opacity-40 mx-auto"
+                    alt=""
                   />
                 </button>
               </div>
@@ -847,6 +873,7 @@ const Index = () => {
                   width={1000}
                   height={1000}
                   className="rounded-xl group-hover:opacity-40 mx-auto"
+                  alt=""
                 />
                 <button
                   className="text-gray-800 absolute right-5 top-5"
@@ -857,6 +884,7 @@ const Index = () => {
                     width={24}
                     height={24}
                     className="rounded-xl group-hover:opacity-40 mx-auto"
+                    alt=""
                   />
                 </button>
               </div>
@@ -873,6 +901,7 @@ const Index = () => {
                   width={1000}
                   height={1000}
                   className="rounded-xl group-hover:opacity-40 mx-auto"
+                  alt=""
                 />
                 <button
                   className="text-gray-800 absolute right-5 top-5"
@@ -883,6 +912,7 @@ const Index = () => {
                     width={24}
                     height={24}
                     className="rounded-xl group-hover:opacity-40 mx-auto"
+                    alt=""
                   />
                 </button>
               </div>
@@ -899,6 +929,7 @@ const Index = () => {
                   width={1000}
                   height={1000}
                   className="rounded-xl group-hover:opacity-40 mx-auto"
+                  alt=""
                 />
                 <button
                   className="text-gray-800 absolute right-5 top-5"
@@ -909,6 +940,7 @@ const Index = () => {
                     width={24}
                     height={24}
                     className="rounded-xl group-hover:opacity-40 mx-auto"
+                    alt=""
                   />
                 </button>
               </div>
@@ -925,6 +957,7 @@ const Index = () => {
                   width={1000}
                   height={1000}
                   className="rounded-xl group-hover:opacity-40 mx-auto"
+                  alt=""
                 />
                 <button
                   className="text-gray-800 absolute right-5 top-5"
@@ -935,6 +968,7 @@ const Index = () => {
                     width={24}
                     height={24}
                     className="rounded-xl group-hover:opacity-40 mx-auto"
+                    alt=""
                   />
                 </button>
               </div>
@@ -949,6 +983,7 @@ const Index = () => {
                     width={96}
                     height={96}
                     className="rounded-xl  "
+                    alt=""
                   />
 
                   <p className="text-xl font-medium absolute   text-gray-800 absolute top-6 left-1/2 transform -translate-x-1/2 ">
@@ -957,11 +992,12 @@ const Index = () => {
                 </div>
                 <div className=" group  mx-auto flex  justify-center items-center relative 2xl:w-325">
                   <Image
-                    src="/Rectangle 18.png"
+                    src="/Rectangle 18n.png"
                     width={325}
                     height={642}
                     objectFit="contain"
                     className="rounded-xl absolute "
+                    alt=""
                   />
 
                   <div className=" rounded-xl flex justify-center items-center opacity-0 ease-in-out transition duration-500 group-hover:opacity-60 bg-gray-800 h-full w-full absolute top-0"></div>
@@ -988,6 +1024,7 @@ const Index = () => {
                     width={96}
                     height={96}
                     className="rounded-xl  "
+                    alt=""
                   />
 
                   <p className="text-xl font-medium  absolute top-6 left-1/2 transform -translate-x-1/2">
@@ -999,11 +1036,12 @@ const Index = () => {
                     flex w-full items-center w-full mx-auto rounded-xl  justify-center relative  2xl:w-325"
                 >
                   <Image
-                    src="/Rectangle 30.png"
+                    src="/Rectangle 30n.png"
                     width={325}
                     height={237}
                     objectFit="contain"
                     className="rounded-xl absolute "
+                    alt=""
                   />
                   <div className=" rounded-xl flex justify-center items-center opacity-0 ease-in-out transition duration-500 group-hover:opacity-60 bg-gray-800 h-full w-full absolute top-0"></div>
 
@@ -1032,6 +1070,7 @@ const Index = () => {
                     width={96}
                     height={96}
                     className="rounded-xl  "
+                    alt=""
                   />
 
                   <p className="text-xl font-medium  absolute top-6 left-1/2 transform -translate-x-1/2">
@@ -1043,10 +1082,11 @@ const Index = () => {
                   2xl:w-325  justify-center relative flex"
                 >
                   <Image
-                    src="/Rectangle 23.png"
+                    src="/Rectangle 23n.png"
                     width={326}
                     height={237}
                     className="rounded-xl absolute"
+                    alt=""
                   />
                   <div className=" rounded-xl flex justify-center items-center opacity-0 ease-in-out transition duration-500 group-hover:opacity-60 bg-gray-800 h-full w-full absolute top-0"></div>
 
@@ -1084,7 +1124,7 @@ const Index = () => {
                     2xl:w-325 flex  justify-center relative "
                 >
                   <Image
-                    src="/Rectangle 32.png"
+                    src="/Rectangle 32n.png"
                     width={325}
                     height={642}
                     className="rounded-xl"
@@ -1128,7 +1168,7 @@ const Index = () => {
                     flex  justify-center relative 2xl:w-325 "
                 >
                   <Image
-                    src="/Rectangle 31.png"
+                    src="/Rectangle 31n.png"
                     width={325}
                     height={642}
                     className="rounded-xl absolute"
@@ -1170,7 +1210,7 @@ const Index = () => {
                     flex 2xl:w-325 justify-center relative "
                 >
                   <Image
-                    src="/Rectangle 33.png"
+                    src="/Rectangle 33n.png"
                     width={325}
                     height={237}
                     className="rounded-xl absolute"
