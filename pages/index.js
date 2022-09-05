@@ -21,23 +21,9 @@ const Index = () => {
       <div className="justify-center 2xl:container mx-auto">
         <div className="  ">
           <div className="flex flex-wrap justify-between items-center px-20">
-            <Image
-              src="/Group.png"
-              width={56}
-              height={72}
-              className="my-auto"
-            />
-            <button
-              className="ml-auto block xl:hidden"
-              onClick={() => setShowMenu(!showMenu)}
-            >
-              <svg
-                fill="#000000"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 30 30"
-                width="30px"
-                height="30px"
-              >
+            <Image src="/Group.png" width={56} height={72} className="my-auto"/>
+            <button className="ml-auto block xl:hidden" onClick={() => setShowMenu(!showMenu)}>
+              <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px">
                 <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z" />
               </svg>
             </button>
@@ -48,41 +34,19 @@ const Index = () => {
                     Bed Room
                   </a>
                   <div onClick={() => setIsList4(!isList4)} className="pb-2">
-                    <Image
-                      src="/Vector.png"
-                      width={8}
-                      height={4}
-                      className="my-auto"
-                    />
+                    <Image src="/Vector.png" width={8} height={4} className="my-auto"/>
                   </div>
                 </div>
-
                 <ul
-                  className={`${
-                    isList4 ? "  flex-col " : "hidden"
-                  } absolute z-20 bg-white p-6 w-32 mr-6`}
-                >
-                  <il className="py-4 text-gray-600 hover:text-gray-400">
-                    Beds
-                  </il>
-                  <li className="pt-4 text-gray-600 hover:text-gray-400">
-                    Bed Sets
-                  </li>
-                  <li className="py-4 text-gray-600 hover:text-gray-400">
-                    Bridal
-                  </li>
-                  <l className="text-gray-600 hover:text-gray-400">Chesters</l>
-                  <li className="py-4 text-gray-600 hover:text-gray-400">
-                    Dresser
-                  </li>
+                  className={`${isList4 ? "  flex-col " : "hidden"} absolute z-20 bg-white p-6 w-32 mr-6`}>
+                  <il className="py-4 text-gray-600 hover:text-gray-400">Beds</il>
+                  <li className="pt-4 text-gray-600 hover:text-gray-400">Bed Sets</li>
+                  <li className="py-4 text-gray-600 hover:text-gray-400">Bridal</li>
+                  <li className="text-gray-600 hover:text-gray-400">Chesters</li>
+                  <li className="py-4 text-gray-600 hover:text-gray-400">Dresser</li>
                   <li className="text-gray-600 hover:text-gray-400">Shelves</li>
-                  <li className="py-4 text-gray-600 hover:text-gray-400">
-                    Side Tables
-                  </li>
-                  <li className="text-gray-600 hover:text-gray-400">
-                    {" "}
-                    Closets
-                  </li>
+                  <li className="py-4 text-gray-600 hover:text-gray-400">Side Tables</li>
+                  <li className="text-gray-600 hover:text-gray-400">{" "}Closets</li>
                 </ul>
               </li>
               <li className="pr-8  cursor-pointer relative mx-4">
@@ -101,31 +65,15 @@ const Index = () => {
                 </div>
 
                 <ul
-                  className={`${
-                    isList ? "  flex-col " : "hidden"
-                  } absolute z-20 bg-white p-6 w-32`}
-                >
-                  <il className="py-4 text-gray-600 hover:text-gray-400">
-                    Beds
-                  </il>
-                  <li className="pt-4 text-gray-600 hover:text-gray-400">
-                    Bed Sets
-                  </li>
-                  <li className="py-4 text-gray-600 hover:text-gray-400">
-                    Bridal
-                  </li>
-                  <l className="text-gray-600 hover:text-gray-400">Chesters</l>
-                  <li className="py-4 text-gray-600 hover:text-gray-400">
-                    Dresser
-                  </li>
+                  className={`${isList ? "  flex-col " : "hidden"} absolute z-20 bg-white p-6 w-32`}>
+                  <il className="py-4 text-gray-600 hover:text-gray-400">Beds</il>
+                  <li className="pt-4 text-gray-600 hover:text-gray-400">Bed Sets</li>
+                  <li className="py-4 text-gray-600 hover:text-gray-400">Bridal</li>
+                  <li className="text-gray-600 hover:text-gray-400">Chesters</li>
+                  <li className="py-4 text-gray-600 hover:text-gray-400">Dresser</li>
                   <li className="text-gray-600 hover:text-gray-400">Shelves</li>
-                  <li className="py-4 text-gray-600 hover:text-gray-400">
-                    Side Tables
-                  </li>
-                  <li className="text-gray-600 hover:text-gray-400">
-                    {" "}
-                    Closets
-                  </li>
+                  <li className="py-4 text-gray-600 hover:text-gray-400">Side Tables</li>
+                  <li className="text-gray-600 hover:text-gray-400">{" "}Closets</li>
                 </ul>
               </li>
               <li className="pr-8  cursor-pointer relative">
@@ -144,31 +92,15 @@ const Index = () => {
                 </div>
 
                 <ul
-                  className={`${
-                    isList2 ? "  flex-col " : "hidden"
-                  } absolute z-20 bg-white p-6 w-32`}
-                >
-                  <il className="py-4 text-gray-600 hover:text-gray-400">
-                    Beds
-                  </il>
-                  <li className="pt-4 text-gray-600 hover:text-gray-400">
-                    Bed Sets
-                  </li>
-                  <li className="py-4 text-gray-600 hover:text-gray-400">
-                    Bridal
-                  </li>
-                  <l className="text-gray-600 hover:text-gray-400">Chesters</l>
-                  <li className="py-4 text-gray-600 hover:text-gray-400">
-                    Dresser
-                  </li>
+                  className={`${isList2 ? "  flex-col " : "hidden"} absolute z-20 bg-white p-6 w-32`}>
+                 <il className="py-4 text-gray-600 hover:text-gray-400">Beds</il>
+                  <li className="pt-4 text-gray-600 hover:text-gray-400">Bed Sets</li>
+                  <li className="py-4 text-gray-600 hover:text-gray-400">Bridal</li>
+                  <li className="text-gray-600 hover:text-gray-400">Chesters</li>
+                  <li className="py-4 text-gray-600 hover:text-gray-400">Dresser</li>
                   <li className="text-gray-600 hover:text-gray-400">Shelves</li>
-                  <li className="py-4 text-gray-600 hover:text-gray-400">
-                    Side Tables
-                  </li>
-                  <li className="text-gray-600 hover:text-gray-400">
-                    {" "}
-                    Closets
-                  </li>
+                  <li className="py-4 text-gray-600 hover:text-gray-400">Side Tables</li>
+                  <li className="text-gray-600 hover:text-gray-400">{" "}Closets</li>
                 </ul>
               </li>
 
@@ -698,12 +630,7 @@ const Index = () => {
               id="modal"
             >
               <div className="flex  mx-auto">
-                <Image
-                  src="/Rectangle 31.png"
-                  width={1000}
-                  height={1000}
-                  className="rounded-xl group-hover:opacity-40 mx-auto"
-                />
+                <Image src="/Rectangle 31.png" width={1000} height={1000} className="rounded-xl group-hover:opacity-40 mx-auto"/>
                 <button
                   className="text-gray-800 absolute right-5 top-5"
                   onClick={() => setHide(false)}
